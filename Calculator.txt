@@ -1,0 +1,34 @@
+import java.util.*;
+class A{
+    public static void main(String [] args){
+        Scanner sc=new Scanner (System.in);
+        System.out.println("started");
+        double a=sc.nextDouble();
+        boolean b=true;
+        int j=1;
+        while(b){
+            char c=sc.next().charAt(0);
+            if(c!='='){
+                b=true;
+            }else{
+                b=false;
+            }
+            switch(c){
+                case '+':double d=sc.nextDouble(); 
+                    	a=a+d;
+                	break;
+                case '-': double e=sc.nextDouble(); 
+                	a=a-e;
+                	break;
+                case '*':double f=sc.nextDouble();  
+                	a=a*f;
+                	break;
+                case '/':double g=sc.nextDouble();  
+                	a=a/g;
+                	break;
+                default :System.out.println(a);
+                	break;
+            }
+        }
+    }
+}
